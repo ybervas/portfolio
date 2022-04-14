@@ -116,21 +116,6 @@ a {
     margin-left: 1em;
 }
 
-.close2 {
-    margin-right: 0.25em;
-    color: wheat;
-    float: right;
-    font-size: 2em;
-    font-weight: bold;
-}
-  
-.close2:hover,
-.close2:focus {
-    color: darkgray;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .close3 {
     margin-right: 0.25em;
     color: wheat;
