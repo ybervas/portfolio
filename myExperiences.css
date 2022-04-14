@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+    background-color: wheat;
+    margin: 0;
+}
+
+.corps {
+    height: 100%;
+    display: flex;
+}
+
+.partieGauche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    background: linear-gradient(135deg, rgb(5, 5, 5) 45%, rgb(200, 200, 200));
+    z-index: 1;
+}
+
+h3 {
+    color: wheat;
+    text-decoration: underline;
+}
+
+a {
+    margin-top: 1em;
+    text-decoration: none;
+    color: wheat;
+}
+
+div+div div a {
+    color: black;
+}
+
+.bloc {
+    display: flex;
+    color: wheat;
+    height: 5em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+    font-size: 0.6em;
+}
+
+#portfolio {
+    background: linear-gradient(rgb(206, 188, 152) 50%, rgb(245, 222, 179));
+    color: black;
+}
+
+.experiences {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.exp {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.1em black;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+img {
+    margin-top: 2.5em;
+    transform: scale(1.5);
+}
+
+
+@media screen and (min-height: 800px) {
+    .experiences {
+        scroll-snap-type: none;
+    }
+}

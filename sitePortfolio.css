@@ -1,5 +1,5 @@
 html, body {
-    margin: 1.3em;
+    margin: 1em;
     height: 94%;
     background-color: wheat;
     color: wheat;
@@ -51,7 +51,7 @@ h1 {
     border-radius: 2px;
     text-align: center;
     text-decoration: none;
-    transition: 0.5s ease-in;
+    transition: 0.25s ease-in;
     font-size: 0.6em;
 }
 
@@ -96,7 +96,7 @@ a {
     background-color: black;
     border: 1px solid wheat;
     width: 78%;
-    height: 74%;
+    height: 69%;
 }
 
 .modal-content h1 {
@@ -167,9 +167,10 @@ a {
 }
 
 
-@media screen and (max-width: 600px) {
+@media only screen and (min-height: 800px) {
     html, body {
         margin: 0.7em;
+        height: 99%;
     }
 
     .menu {

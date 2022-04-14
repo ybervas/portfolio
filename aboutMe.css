@@ -22,8 +22,8 @@ html, body {
 .bloc {
     display: flex;
     color: wheat;
-    min-height: 80%;
-    min-width: 25%;
+    height: 80%;
+    width: 25%;
     justify-content: center;
     align-items: center;
     border: solid 2px black;
@@ -64,7 +64,24 @@ html, body {
     margin: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-height: 800px) {
+    html, body {
+        font-size: 1.35em;
+    }
+
+    .corps {
+        flex-direction: column;
+    }
+
+    .partieGauche {
+        min-height: 10%;
+    }
+
+    .partieDroite {
+        margin: 1.5em;
+        margin-top: 0;
+    }
+
     .bloc {
         min-height: 20%;
         min-width: 75%;
