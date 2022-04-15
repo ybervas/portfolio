@@ -79,8 +79,21 @@ img {
 }
 
 
-@media screen and (min-height: 800px) {
+@media screen and (min-height: 1200px) {
+    html, body {
+        font-size: 1.35em;
+    }
+
     .experiences {
         scroll-snap-type: none;
+    }
+
+    .exp {
+        height: 50%;
+    }
+
+    img {
+        margin-top: 2.5em;
+        transform: scale(1);
     }
 }

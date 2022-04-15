@@ -152,10 +152,11 @@ a {
 }
 
 
-@media only screen and (min-height: 800px) {
+@media only screen and (min-height: 1200px) {
     html, body {
         margin: 0.7em;
         height: 99%;
+        font-size: 1.35em;
     }
 
     .menu {
