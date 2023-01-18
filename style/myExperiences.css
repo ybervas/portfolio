@@ -7,14 +7,10 @@ html, body {
 .corps {
     height: 100%;
     display: flex;
+    flex-direction: column;
 }
 
-.partieGauche {
-    position: absolute;
-    z-index: 1;
-}
-
-h1 {
+.titre {
     padding-bottom: 1em;
     color: wheat;
     text-decoration: underline;
@@ -42,7 +38,7 @@ div+div div a {
 }
 
 #portfolio {
-    background: linear-gradient(rgb(206, 188, 152) 50%, rgb(245, 222, 179));
+    background: linear-gradient(rgb(245, 222, 179) 50%, rgb(245, 222, 179));
     color: black;
 }
 
@@ -124,8 +120,45 @@ img:hover {
     transform: scale(1.5);
 }
 
-.dropdown {
+.retour {
     color: wheat;
+    border: solid 1px wheat;
+    background: linear-gradient(135deg, rgb(0, 0, 100), rgb(200, 200, 200), rgb(100, 0, 0));
+    margin-bottom: 1em;
+    transition: 0.25s ease-in;
+    border-radius: 2px;
+}
+
+.retour:hover {
+    color: wheat;
+    text-decoration: none;
+    transform: scale(1.15);
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(10, 10, 10);
+    border: solid 1px wheat;
+    width: 100%;
+    min-height: 12%;
+    z-index: 1;
+    text-align: center;
+}
+
+.btn {
+    border: solid 1px lightblue;
+}
+
+.btn, .card {
+    color: wheat;
+    background-color: black;
+}
+
+.btn:hover, .card {
+    color: black;
+    background-color: wheat;
 }
 
 @media screen and (min-height: 1200px) {
@@ -148,5 +181,9 @@ img:hover {
 
     img:hover {
         transform: scale(1.15);
+    }
+
+    .navbar {
+        min-height: auto;
     }
 }

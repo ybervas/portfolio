@@ -22,6 +22,7 @@ h1 {
     display: flex;
     margin-left: 2em;
     margin-top: 1em;
+    flex: 1;
 }
 
 .port {
@@ -38,6 +39,7 @@ h1 {
     width: 100%;
     align-items: center;
     justify-content: space-around;
+    flex: 15;
 }
 
 .bloc {
@@ -62,6 +64,20 @@ h1 {
 
 .bloc:hover {
     transform: scale(1.15);
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+img {
+    margin-top: 1em;
+    width: 90%;
+    clip-path:ellipse(50% 50%);
 }
 
 #aboutMe {
