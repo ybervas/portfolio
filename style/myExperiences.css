@@ -83,7 +83,6 @@ img:hover {
     transform: scale(1.5);
 }
 
-
 @media screen and (min-height: 1200px) {
     html, body {
         font-size: 1.35em;

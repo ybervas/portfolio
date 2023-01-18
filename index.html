@@ -25,24 +25,26 @@
             </div>
 
             <div class="menu">
-                <a href="aboutMe.html" id="aboutMe" class="bloc">
+                <div id="aboutMe" class="bloc slide">
                     <h1>A PROPOS DE MOI</h1>
-                </a>
+                    <div class="cache">
+                        <p>Bonjour, <br>
+                            Je m'appelle Yahn Bervas </br>
+                            Aimant beaucoup les jeux vidéo et ayant commencé l'informatique en classe de première au lycée Jean Monet, je suis aujourd'hui étudiant en seconde année de BUT à l'IUT de Bordeaux 
+                            sur le site de Gradignan. Étant créatif, très investi, j'ai intégré, en première année de formation, le club innovation jeu vidéo de mon établissement.
+                        </p>
+                    </div>
+                </div>
 
                 <a href="myExperiences.html" id="myWorks" class="bloc">
                     <h1>MES EXPERIENCES</h1>
                 </a>
 
-                <div id="myContact" class="bloc">
+                <div id="myContact" class="bloc slide">
                     <h1>ME CONTACTER</h1>
-                </div>
-
-                <div id="myModal3" class="modal">
-                    <div class="modal-content">
-                        <span class="close3">&times;</span>
-                        <h1>Me contacter</h1>
-                        <p>Adresse E-mail : bervasyahn@gmail.com</p>
-                        <p>Téléphone : xx xx xx xx xx</p>
+                    <div class="cache">
+                        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Adresse E-mail : bervasyahn@gmail.com</a>
+                        <p>Téléphone : 06 28 22 01 76</p>
                     </div>
                 </div>
 
@@ -50,40 +52,4 @@
             <p class="myName">Yahn Bervas</p>
         </div>
     </body>
-
-    <script>
-        // Get the button that opens the modal
-        var btn = document.getElementById("myWorks");
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close2")[0];
-        
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-            myModal2.style.display = "flex";
-        }
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            myModal2.style.display = "none";
-        }
-    </script>
-
-    <script>
-        // Get the button that opens the modal
-        var btn = document.getElementById("myContact");
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close3")[0];
-        
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-            myModal3.style.display = "flex";
-        }
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            myModal3.style.display = "none";
-        }
-    </script>
 </html>
