@@ -10,23 +10,14 @@ html, body {
 }
 
 .partieGauche {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25%;
-    background: linear-gradient(135deg, rgb(5, 5, 5) 45%, rgb(200, 200, 200));
+    position: absolute;
     z-index: 1;
 }
 
-h3 {
+h1 {
+    padding-bottom: 1em;
     color: wheat;
     text-decoration: underline;
-}
-
-a {
-    margin-top: 1em;
-    text-decoration: none;
-    color: wheat;
 }
 
 div+div div a {
@@ -64,6 +55,7 @@ div+div div a {
 
 .exp {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,6 +63,55 @@ div+div div a {
     border: solid 0.1em black;
     text-align: center;
     scroll-snap-align: center;
+}
+
+.devant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#pong {
+    background-image: url("../photo/Slide1.jpg");
+    backdrop-filter: blur(50px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center
+}
+
+#installation {
+    background-image: url("../photo/Slide4.jpg");
+    backdrop-filter: blur(50px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center
+}
+
+#lowatem1 {
+    background-image: url("../photo/Slide2.jpg");
+    backdrop-filter: blur(50px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center
+}
+
+#lowatem2 {
+    background-image: url("../photo/Slide3.jpg");
+    backdrop-filter: blur(50px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center
+}
+
+#graveCie {
+    background-image: url("../photo/Slide5.jpg");
+    backdrop-filter: blur(50px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center
 }
 
 img {
@@ -81,6 +122,10 @@ img {
 
 img:hover {
     transform: scale(1.5);
+}
+
+.dropdown {
+    color: wheat;
 }
 
 @media screen and (min-height: 1200px) {

@@ -72,6 +72,7 @@ h1 {
 
 #aboutMe:hover {
     background: url("../photo/aboutMe.png"), linear-gradient(135deg, rgb(0, 0, 100) 25%, rgb(80, 80, 200));
+    background-repeat: no-repeat;
     background-position-x: center;
 }
 
@@ -86,7 +87,9 @@ h1 {
 }
 
 #myContact:hover {
-    background-image:  url("../photo/myContact.png"), linear-gradient(-135deg, rgb(100, 0, 0) 25%, rgb(200, 50, 50));
+    background-image: url("../photo/myContact.png"), linear-gradient(-135deg, rgb(100, 0, 0) 25%, rgb(200, 50, 50));
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .slide h1 {
@@ -146,5 +149,13 @@ h1+a:hover {
 
     .slide:hover h1 {
         transform: translate(0, -7.5vh)
+    }
+
+    #aboutMe {
+        background-position: center;
+    }
+    
+    #aboutMe:hover {
+        background-position: center;
     }
 }

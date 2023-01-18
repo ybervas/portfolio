@@ -4,49 +4,69 @@
         <meta charset="utf-8">
         <title>Mes expériences</title>
         <link href="style/myExperiences.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
 
     <body>
         <div class="corps">
             <div class="partieGauche">
-                <a href="index.html" id="portfolio" class="bloc">
-                    <h1>RETOUR</h1>
-                </a>
-                <h3>Mes expériences :</h3>
-                <a href="#pong">Pong</a>
-                <a href="#installation">Environnement virtuel</a>
-                <a href="#lowatem1">Lowatem : 1e Partie</a>
-                <a href="#lowatem2">Lowatem : 2e Partie</a>
-                <a href="#graveCie">Grave & Cie</a>
+
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <h2>Mes expériences</h2>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#pong">Pong</a></li>
+                        <li><a class="dropdown-item" href="#installation">Environnement virtuel</a></li>
+                        <li><a class="dropdown-item" href="#lowatem1">Lowatem : 1e Partie</a></li>
+                        <li><a class="dropdown-item" href="#lowatem2">Lowatem : 2e Partie</a></li>
+                        <li><a class="dropdown-item" href="#graveCie">Grave & Cie</a></li>
+                    </ul>
+                </div>
                 
             </div>
 
             <div class="experiences">
                 <div class="exp" id="pong">
-                    <h1>Pong [Jeu]</h1>
-                    <a href="retex/pong.pdf" target="_blank"><img src="photo/pong.png"></a>
+                    <div class="devant">
+                        <h1>Pong [Jeu]</h1>
+                        <a href="retex/pong.pdf" target="_blank"><img src="photo/pong.png"></a>
+                    </div>
                 </div>
 
                 <div class="exp" id="installation">
-                    <h1>Environnement virtuel [Machine virtuelle]</h1>
-                    <a href="retex/installationPoste.pdf" target="_blank"><img src="photo/installation.png"></a>
+                    <div class="devant">
+                        <h1>Environnement virtuel [Machine virtuelle]</h1>
+                        <a href="retex/installationPoste.pdf" target="_blank"><img src="photo/installation.png"></a>
+                    </div>
                 </div>
 
                 <div class="exp" id="lowatem1">
-                    <h1>Lowatem : 1e Partie [Jeu]</h1>
-                    <a  href="retex/lowatem1.pdf" target="_blank"><img src="photo/lowatem.png"></a>
+                    <div class="devant">
+                        <h1>Lowatem : 1e Partie [Jeu]</h1>
+                        <a  href="retex/lowatem1.pdf" target="_blank"><img src="photo/lowatem.png"></a>
+                    </div>
                 </div>
 
                 <div class="exp" id="lowatem2">
-                    <h1>Lowatem : 2e Partie [Jeu]</h1>
-                    <a  href="retex/lowatem2.pdf" target="_blank"><img src="photo/lowatem.png"></a>
+                    <div class="devant">
+                        <h1>Lowatem : 2e Partie [Jeu]</h1>
+                        <a  href="retex/lowatem2.pdf" target="_blank"><img src="photo/lowatem.png"></a>
+                    </div>
                 </div>
 
                 <div class="exp" id="graveCie">
-                    <h1>Grave & Cie [Application]</h1>
-                    <a  href="retex/graveCie.pdf" target="_blank"><img src="photo/graveCie.jpg"></a>
+                    <div class="devant">
+                        <h1>Grave & Cie [Application]</h1>
+                        <a  href="retex/graveCie.pdf" target="_blank"><img src="photo/graveCie.jpg"></a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <script src="js/utils.js" type="text/javascript"></script>
     </body>
 </html>
