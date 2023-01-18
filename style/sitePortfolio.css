@@ -65,7 +65,14 @@ h1 {
 }
 
 #aboutMe {
-    background: linear-gradient(135deg, rgb(0, 0, 100) 25%, rgb(80, 80, 200));
+    background: url("../photo/aboutMe.gif"), linear-gradient(135deg, rgb(0, 0, 100) 25%, rgb(80, 80, 200));
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#aboutMe:hover {
+    background: url("../photo/aboutMe.png"), linear-gradient(135deg, rgb(0, 0, 100) 25%, rgb(80, 80, 200));
+    background-position-x: center;
 }
 
 #myWorks {
