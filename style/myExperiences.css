@@ -123,7 +123,7 @@ img:hover {
 .retour {
     color: wheat;
     border: solid 1px wheat;
-    background: linear-gradient(135deg, rgb(0, 0, 100), rgb(200, 200, 200), rgb(100, 0, 0));
+    background: linear-gradient(90deg, rgb(0, 0, 100), rgb(200, 200, 200), rgb(100, 0, 0));
     margin-bottom: 1em;
     transition: 0.25s ease-in;
     border-radius: 2px;

@@ -10,6 +10,10 @@ h1 {
     text-align: center;
 }
 
+p {
+    font-size: 1.25em;
+}
+
 .corps {
     display: flex;
     background-color: black;
@@ -77,7 +81,8 @@ h1 {
 img {
     margin-top: 1em;
     width: 90%;
-    clip-path:ellipse(50% 50%);
+    border-radius: 50%;
+    border: solid 2px wheat;
 }
 
 #aboutMe {
@@ -93,7 +98,15 @@ img {
 }
 
 #myWorks {
-    background: linear-gradient(rgb(100, 100, 100) 25%, rgb(200, 200, 200));
+    background: url("../photo/myWorks.gif"), linear-gradient(rgb(100, 100, 100) 25%, rgb(200, 200, 200));
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#myWorks:hover {
+    background-image: url("../photo/myWorks.png"), linear-gradient(rgb(100, 100, 100) 25%, rgb(200, 200, 200));
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #myContact {
