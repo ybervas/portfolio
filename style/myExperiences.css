@@ -58,7 +58,7 @@ div+div div a {
     align-items: center;
     border: solid 0.1em black;
     text-align: center;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
 
 .devant {
@@ -70,44 +70,8 @@ div+div div a {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
-#pong {
-    background-image: url("../photo/Slide1.jpg");
-    backdrop-filter: blur(50px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center
-}
-
-#installation {
-    background-image: url("../photo/Slide4.jpg");
-    backdrop-filter: blur(50px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center
-}
-
-#lowatem1 {
-    background-image: url("../photo/Slide2.jpg");
-    backdrop-filter: blur(50px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center
-}
-
-#lowatem2 {
-    background-image: url("../photo/Slide3.jpg");
-    backdrop-filter: blur(50px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center
-}
-
-#graveCie {
-    background-image: url("../photo/Slide5.jpg");
-    backdrop-filter: blur(50px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center
+#imgSymfony {
+    width: 25%;
 }
 
 img {
@@ -123,22 +87,24 @@ img:hover {
 .retour {
     color: wheat;
     border: solid 1px wheat;
-    background: linear-gradient(90deg, rgb(0, 0, 100), rgb(200, 200, 200), rgb(100, 0, 0));
+    /*background: linear-gradient(90deg, rgb(0, 0, 100), rgb(200, 200, 200), rgb(100, 0, 0));*/
+    background-color: black;
     margin-bottom: 1em;
     transition: 0.25s ease-in;
     border-radius: 2px;
 }
 
 .retour:hover {
-    color: wheat;
+    color: black;
+    background-color: wheat;
     text-decoration: none;
     transform: scale(1.15);
 }
 
 .navbar {
     display: flex;
-    position: absolute;
     flex-direction: column;
+    position: absolute;
     background-color: rgb(10, 10, 10);
     border: solid 1px wheat;
     width: 100%;
@@ -156,6 +122,13 @@ img:hover {
     background-color: black;
 }
 
+.card:hover {
+    text-decoration: none;
+    color: wheat;
+    background-color: black;
+    border: solid 1px lightblue;
+}
+
 .btn:hover, .card {
     color: black;
     background-color: wheat;
@@ -164,10 +137,6 @@ img:hover {
 @media screen and (min-height: 1200px) {
     html, body {
         font-size: 1.35em;
-    }
-
-    .experiences {
-        scroll-snap-type: none;
     }
 
     .exp {
