@@ -79,9 +79,8 @@ p {
 }
 
 img {
-    margin-top: 1em;
     width: 90%;
-    border-radius: 50%;
+    border-radius: 2px;
     border: solid 2px wheat;
 }
 
